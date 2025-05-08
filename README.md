@@ -18,9 +18,15 @@ Note: First in order to start writing the code check whether you have configured
 
 ## Setup Jenkins on aws using terraform
 First create an empty dir in github and clone it on your local machine
+
 Use vscode and create all the required tf files(main.tf, providers.tf, data.tf, backend.tf, variables.tf, terraform.tfvars) and jenkins installaiton script as given in my above code
+
 In providers use aws as providers and the region you want to use take a s3 bucket for the backend
+
 Use terraform modules for the remaing files to create a ec2 instace and required specifications
+
 First install terraform in your local machine and then intialize by terraform init cmd and then validata and plan it will show all the resources that are about to created like ec2,vpc and finally terraform apply your resources are being setup on aws through terraform
+
 Now create a file jenkins-install.sh contains all the commands that install jenkins, terraform,git and kubectl in your ec2 instance
+
 Acces your jenkins server by public id of your ec2 instance and port 8080 and isntall the all required plugins.
